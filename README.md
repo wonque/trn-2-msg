@@ -6,7 +6,7 @@ App reads transaction file and writes the result to file
 It works on my machine =)
 ## Other non-crucial info how to build/run/etc
 ## Notes
-This is a simple single threaded solution. Possibly to process large input file a multi-threaded solution should be implemented (with splitting input file on chunks).
+This is a simple single threaded solution. Possibly to process large input file a multi-threaded and more efficient solution can be implemented.
 ## Build
 
 ```bash
