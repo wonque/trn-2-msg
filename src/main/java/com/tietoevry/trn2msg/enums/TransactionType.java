@@ -7,16 +7,12 @@ public enum TransactionType {
     PURCHASE("00", "Purchase"),
     WITHDRAWAL("01", "Withdrawal");
 
-    private String numericCode;
-    private String formattedType;
+    private final String numericCode;
+    private final String formattedType;
 
     TransactionType(String numericCode, String formattedType) {
         this.numericCode = numericCode;
         this.formattedType = formattedType;
-    }
-
-    public String getNumericCode() {
-        return numericCode;
     }
 
     public String getFormattedType() {

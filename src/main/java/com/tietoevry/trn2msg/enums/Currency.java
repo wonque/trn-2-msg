@@ -17,10 +17,6 @@ public enum Currency {
         this.alphaCode = alphaCode;
     }
 
-    public String getNumericCode() {
-        return numericCode;
-    }
-
     public String getAlphaCode() {
         return alphaCode;
     }
@@ -28,15 +24,6 @@ public enum Currency {
     public static Optional<Currency> getByNumericCode(String code) {
         for (Currency c : values()) {
             if (c.numericCode.equals(code)) {
-                return Optional.of(c);
-            }
-        }
-        return Optional.empty();
-    }
-
-    public static Optional<Currency> getByNumericCode(int code) {
-        for (Currency c : values()) {
-            if (c.numericCode.equals(String.valueOf(c))) {
                 return Optional.of(c);
             }
         }

@@ -48,7 +48,7 @@ public class InputParsingService {
     private TransactionType getTransactionType(String input) {
         String extracted = getSubstring(input, 0, 2);
         return TransactionType.getByNumericCode(extracted).orElseThrow(()
-                -> new TransactionParsingException("TransactionInputParsingService - unable to get transaction type!"));
+                -> new TransactionParsingException("TransactionInputParsingService - invalid or unsupported transaction type!"));
     }
 
     private LocalDateTime getTransactionTime(String input) {

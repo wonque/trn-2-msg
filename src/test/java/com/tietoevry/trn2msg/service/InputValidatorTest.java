@@ -1,7 +1,6 @@
-package com.tietoevry.trn2msg.transaction;
+package com.tietoevry.trn2msg.service;
 
 import com.tietoevry.trn2msg.exception.ValidationException;
-import com.tietoevry.trn2msg.service.InputValidator;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.junit.jupiter.params.ParameterizedTest;
